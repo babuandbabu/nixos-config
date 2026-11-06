@@ -1,6 +1,6 @@
 # XDG portals: screen sharing, screenshots, file pickers.
 # Replaces the Fedora-only /usr/libexec portal lines in autostart.sh.
-{ pkgs, ... }:
+{ pkgs,lib, ... }:
 {
   xdg.portal = {
     enable = true;
@@ -12,7 +12,7 @@
     config = {
       common.default = [ "gtk" ];
       # Name matches XDG_CURRENT_DESKTOP=mango from your env.conf
-      mango.default = [ "wlr" "gtk" "lib.mkForce" ];
+      mango.default =lib.mkForce [ "wlr" "gtk"];
     };
   };
 }

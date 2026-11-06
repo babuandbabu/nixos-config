@@ -22,7 +22,7 @@
     # Only exposes a package (packages.<system>.default) for plain NixOS use;
     # its module is Home-Manager-only, which we deliberately do not use.
     #noctalia = {
-     # url = "github:noctalia-dev/noctalia";
+     noctalia.url = "github:noctalia-dev/noctalia";
       #inputs.nixpkgs.follows = "nixpkgs";
     #};
   };
@@ -38,7 +38,7 @@
   #};
 
  # outputs = { self, nixpkgs, mangowm, noctalia, ... }@inputs: {
-outputs = { self, nixpkgs, ... }@inputs: {
+outputs = { self, nixpkgs,noctalia, ... }@inputs: {
     nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
       # `inputs` is passed to every module so they can write inputs.noctalia etc.
       specialArgs = { inherit inputs; };

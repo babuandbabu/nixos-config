@@ -13,6 +13,7 @@ in
 {
   services.displayManager.sddm = {
     enable = true;
+    wayland.enable = true;
     package = pkgs.kdePackages.sddm; # Qt6 SDDM (required by the theme)
     theme = "sddm-astronaut-theme";
     # Greeter runs on X11 (most robust). Session itself is Wayland (mango).

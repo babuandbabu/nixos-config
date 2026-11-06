@@ -22,11 +22,11 @@
     ./modules/desktop/noctalia.nix
     ./modules/desktop/sddm.nix
     ./modules/desktop/portals.nix
-    ./modules/desktop/theming.nix
+    ./modules/system/theming.nix
 
     # ---- programs ----
     ./modules/programs/packages.nix
     ./modules/programs/zsh.nix
-    ./modules/programs/nautilus.nix
+    ./modules/desktop/nautilus.nix
   ];
 }
