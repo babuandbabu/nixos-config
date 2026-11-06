@@ -14,6 +14,8 @@
     curl wget unzip zip p7zip
     wl-clipboard grim slurp brightnessctl playerctl pamixer
     nwg-look qt6Packages.qt6ct
+	noctalia 
+	mango
 
     # ---- extra CLI tools ----
     file which psmisc          # file type, which, killall
