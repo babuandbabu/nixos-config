@@ -4,7 +4,10 @@
     experimental-features = [ "nix-command" "flakes" ];
     auto-optimise-store = true;
     # Noctalia binary cache (same as in flake.nix, but permanent / system-wide)
-    substituters = [ "https://noctalia.cachix.org" ];
+    substituters = [
+      "https://cache.nixos.org"
+      "https://noctalia.cachix.org"
+    ];
     trusted-public-keys = [ "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=" ];
   };
 
